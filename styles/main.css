@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --azul-escuro: #03318c;
+  --roxo: #5d04d9;
+  --roxo-claro: #9303a6;
+  --rosa-claro: #c004d9;
+  --rosa-escuro: #8c0375;
+  --cinza: #bfbfbf;
+  --texto: #ffffff;
+  --fonte-pixel: "Press Start 2P", system-ui;
+
+  
+  --fonte-texto: "IBM Plex Mono", monospace; 
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+/* HEADER */
+
+.header-top {
+  background-color: var(--roxo);
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid var(--cinza);
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+/* FORM */
+
+.form-title {
+  margin: 7% 0;
+  font-family: var(--fonte-pixel);
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title-produtos {
+  margin: 7% 0;
+  font-family: var(--fonte-pixel);
+  font-size: 1.5rem;
+
+}
+
+#form-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-style {
+  font-family: var(--fonte-texto);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px;
+  border: 2px solid var(--azul-escuro);
+  border-radius: 40px;
+  width: 100%;
+  color: var(--azul-escuro);
+}
+
+
+.form-style::placeholder {
+  color: var(--azul-escuro);
+  font-weight: 600;
+  font-family: var(--fonte-texto);
+}
+
+.form-style:focus {
+  outline: none !important;
+  background-color: #f0f0f0;
+}
+
+.botoes-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+#btn-guardar {
+  width: 45%;
+  font-family: var(--fonte-texto);
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 10px;
+  color: var(--texto);
+  background-color: var(--azul-escuro);
+  border: 3px solid var(--azul-escuro);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#btn-limpar {
+  width: 45%;
+  font-family: var(--fonte-texto);
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 10px;
+  color: var(--azul-escuro);
+  background-color: var(--texto);
+  border: 3px solid var(--azul-escuro);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+
+/* PRODUTOS */
+
+.itens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CARDS */
+
+.cards__container {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  padding-left: 1rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin-bottom: 5rem;
+}
+
+.card {
+  border: 4px solid black;
+  border-radius: 8px;
+  width: 196px;
+  height: 258px;
+  background-color: var(--roxo);
+  padding: 6px 6px 0px 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin: 3.5rem 0;
+  color: var(--texto);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+}
+
+.img-card > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.img-card { 
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border: 4px solid black; 
+  border-radius: 8px;
+}
+
+.nome-card {
+  font-family: var(--fonte-texto);
+  font-size: 15px;
+}
+
+.card-bottom {
+  display: flex;
+  font-family: var(--fonte-texto);
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--texto);
+  justify-content: space-between;
+}
+
+.cards__item {
+ list-style: none;
+}
+
+.cards__container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.cards__container::-webkit-scrollbar-track {
+  background: rgb(160, 160, 160);
+}
+
+.cards__container::-webkit-scrollbar-thumb {
+  background: rgba(0, 119, 255, 0.37);
+  border-radius: 10px;
+}
+
+.cards__container::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 102, 255);
+}
+
+/* FOOTER */  
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  position: relative;
+  bottom: 0;
+  background-color: var(--roxo);
+  -webkit-box-shadow: -1px -2px 18px -1px #000000;
+  box-shadow: -1px -2px 18px -1px #000000;
+  padding: 2rem;
+  font-family: var(--fonte-texto);
+}
+
+footer > img {
+  width: 80%;
+  height: auto;
+}
+
+.footer-dev {
+  font-family: var(--fonte-texto);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--texto);
+}
+
+.footer-inst {
+  font-family: var(--fonte-texto);
+  font-weight: 200;
+  font-size: 1rem;
+  color: var(--texto);
+}

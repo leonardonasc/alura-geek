@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+  </head>
+  <body>
+    <header class="header-top">
+      <img src="./assets/imgs/Logo.png" alt="AluraGeek" />
+    </header>
+    <main class="container">
+      <section class="produtos">
+        <h1 class="form-title"><span>ADICIONAR</span> <span>PRODUTO:</span></h1>
+
+        <form id="form-main" data-formulario>
+          <input
+            type="text"
+            class="form-style"
+            id="form-name"
+            name="nome"
+            placeholder="nome..."
+            data-nome
+          />
+          <input
+            type="text"
+            class="form-style"
+            id="form-preco"
+            name="preco"
+            placeholder="preço..."
+            data-preco
+          />
+          <input
+            type="url"
+            class="form-style"
+            id="form-imagem"
+            name="preco"
+            placeholder="imagem..."
+            data-imagem
+          />
+          <div class="botoes-form">
+            <input type="submit" value="Guardar" id="btn-guardar" />
+            <input type="button" value="Limpar" id="btn-limpar" />
+          </div>
+        </form>
+      </section>
+
+      <section class="itens">
+        <h1 class="form-title-produtos">MEUS PRODUTOS:</h1>
+
+        <!-- card -->
+        <ul class="cards__container" alt="cards produtos" data-cards>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <img src="assets/imgs/Logo.png" alt="footer logo" />
+      <h3 class="footer-dev">DESENVOLVIDO POR LEONARDO</h3>
+      <h4 class="footer-inst">ALURA LATAM - 2024</h4>
+    </footer>
+
+    <script src="./js/apiConnect.js" type="module"></script>
+    <script src="./js/showCards.js" type="module"></script>
+    <script src="js/createCard.js" type="module"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

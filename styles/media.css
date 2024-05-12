@@ -1,0 +1,60 @@
+
+
+@media only screen and (min-width: 768px) {
+
+  .container {
+    flex-direction: row-reverse;
+
+  }
+
+  .produtos {
+    min-width: 35%;
+  }
+
+  .form-title-produtos {
+    margin: 3% 0;
+  }
+
+  .cards__container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 67%;
+  }
+
+  .card {
+    margin: 0rem 0;
+  }
+
+
+  #btn-guardar {
+    font-size: 1rem;
+  }
+  
+  #btn-limpar {
+    font-size: 1rem;
+  } 
+  
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  footer > img {
+    width: 40%;
+    height: auto;
+  }
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  footer > img {
+    width: 20%;
+    height: auto;
+  }
+}
