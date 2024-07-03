@@ -1,22 +1,3 @@
 {
-  "produtos": [
-    {
-      "id": "8f6e",
-      "nome": "objeto 1",
-      "preco": "22",
-      "imagem": "21"
-    },
-    {
-      "id": "8f6e",
-      "nome": "objeto 2",
-      "preco": "22",
-      "imagem": "21"
-    },
-    {
-      "id": "3a85",
-      "nome": "teste",
-      "preco": "2",
-      "imagem": ""
-    }
-  ]
+  "produtos": []
 }
